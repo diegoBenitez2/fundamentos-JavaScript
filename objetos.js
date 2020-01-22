@@ -43,7 +43,7 @@ imprimirMayuscula(diego)
 // function cumpleanos(persona){
 // persona.edad += 1
 // }
-//le pasamos un TATRIBUTO del objeto  en la funcion
+//le pasamos un ATRIBUTO del objeto  en la funcion
 // function cumpleanos(edad){
 //   edad +=1
 //   console.log(edad)

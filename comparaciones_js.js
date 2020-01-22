@@ -20,7 +20,7 @@ diego == julio
 
 //aqui apunta al mismo espacio en memoria
 var otraPersona = diego
-//dará true
+//dará t
 
 
 

@@ -13,8 +13,10 @@ imprimirEdad('aloso',33)
 imprimirEdad(18,'vickyalrma')
 
 //ALCANCE DE LAS FUNCIONES
-function imprimirMayuscula(n){
-  n = n.toUpperCase()
-  console.log(n)
+function imprimirMayuscula(nombre){
+  //la variable definida como parametro  'nombre' existe en alcance local(de la funcion)
+  nombre = nombre.toUpperCase()
+  console.log(nombre)
 }
-imprimirMayuscula('diego')
+imprimirMayuscula(nombre)
+
