@@ -3,6 +3,8 @@ var juan = {
   apellido:'Gomez',
   edad: 27,
   peso: 75,
+  cantidadLibros: 75
+
 }
 
 var luis = {
@@ -10,7 +12,9 @@ var luis = {
   apellido:'Martinez',
   edad: 22,
   peso: 78,
-  altura: 1.70
+  altura: 1.70,
+  cantidadLibros: 67
+
 
 }
 
@@ -23,7 +27,9 @@ var diego = {
   dj: false,
   guitarrista: true,
   drone:false,
-  altura: 1.80
+  altura: 1.80,
+  cantidadLibros: 100
+
 }
 
 var carlos = {
@@ -31,7 +37,8 @@ var carlos = {
   apellido:'Palacios',
   edad: 18,
   peso: 67,
-  altura: 1.60
+  altura: 1.60,
+  cantidadLibros: 80
 }
 
 const personas =[carlos, diego, luis]
@@ -46,7 +53,7 @@ for(var i = 0 ; i< personas.length; i++){
 const esAlta = ({altura}) => altura > 1.7
 
 
-//filtra arrays con una funcion devuelve un array nuevo
+//filtra los items de un arrays que cumplen la funcion(condicional)
 var personasALtas = personas.filter(esAlta)
 console.log(personasALtas)
 
@@ -71,7 +78,35 @@ const pasarACmts = ({altura})=>
 //   altura: altura * 100
 // }
 
-}
+// }
 //se crea un nuevo array actualizando la altura
 var personasCms = personas.map(pasarACmts)
 console.log(personasCms)
+
+//OBTENER EL TOTAL DE LOS VALORES DE UN ITEM EN UN ARRAY
+//OPCION 1
+// var TotalLbros = 0
+// for (var i = 0; i< personas.length; i++){
+//   TotalLbros += personas[i].cantidadLibros
+  
+// }
+//OPCION 2
+const reducer = (acum, {cantidadLibros}) => 
+  acum + cantidadLibros
+// variable.reduce(funcion, inicial)
+var TotalLbros = personas.reduce(reducer, 0)
+console.log(`La cantidad de libros son:${TotalLbros} `)
+
+//Agregar, eliminar, reemplazar valores en un array
+var clasificaciones = ['Ana', 'Oswaldo', 'Raul','Celia', 'Maria', 'Antonio']
+console.log(clasificaciones)
+clasificaciones.splice(2,2,'Celia','Raul')
+console.log(clasificaciones)
+clasificaciones.splice(5,1)
+console.log(clasificaciones)
+clasificaciones.unshift('Marta')
+console.log(clasificaciones)
+clasificaciones.splice(1,0,'Roberto','Amaya')
+console.log(clasificaciones)
+
+

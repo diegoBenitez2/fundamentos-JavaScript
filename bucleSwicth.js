@@ -1,4 +1,4 @@
-var signo = prompt('Cual es tu signo');
+// var signo = prompt('Cual es tu signo');
 
 switch(signo){
   case 'acuario' :
