@@ -109,4 +109,23 @@ console.log(clasificaciones)
 clasificaciones.splice(1,0,'Roberto','Amaya')
 console.log(clasificaciones)
 
+//Crear copia de array, ordenar asce, ordenar desce
+var numerosAleatorios  = []
+for (var i = 0; i < 10; i++){
+  numerosAleatorios[i] = Math.round(Math.random() * 10 )
+}
+console.log(`los numeros aleatorios son : ${numerosAleatorios}`)
+
+var aleatorios2 = numerosAleatorios.slice();
+console.log(`los numeros nuevos  aleatorios son : ${numerosAleatorios}`)
+
+const numOrdenadosAsc = aleatorios2.sort((a,b) => a - b)
+console.log(`los numeros ordenados Ascendentemente: ${numOrdenadosAsc}`)
+
+
+const numOrdenadosDes = aleatorios2.sort((a,b)=> b - a)
+console.log(`los numeros ordenados Descendentemente: ${numOrdenadosDes}`)
+
+
+
 
