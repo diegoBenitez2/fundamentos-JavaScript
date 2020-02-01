@@ -14,6 +14,7 @@ class Persona{
   console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`)
   }
 
+
   soyAlto(){
     return this.altura > 1.7
   }
@@ -21,12 +22,12 @@ class Persona{
 }
 
 class Desarrollador extends Persona{
-  constructor(nombre, apellido, altura){
-    //llama al constructor de la clase que extiende
+  constructor(nombre, apellido, altura, especialidad) {
+  //   //llama al constructor de la clase que extiende
     super(nombre, apellido, altura)
-  }
+    this.especialidad = especialidad
+    }
   saludar(){
-    console.log(`Hola, me llamo ${this.nombre} ${this.apellido} soy Desarrollador`)
-
+    console.log(`Hola, me llamo ${this.nombre} ${this.apellido}  ${this.altura}  y  soy Desarrollador ${this.especialidad}`)
   }
 }
