@@ -5,7 +5,7 @@ var juan = {
   peso: 75,
 }
 const META = juan.peso - 3;
-const INCREMENTO = 0.2;
+const INCREMENTO_PESO = 0.2;
 const  aumentardePeso = persona => persona.peso += INCREMENTO_PESO
 const   adelgazar = persona => persona.peso -= INCREMENTO_PESO
 var dias = 0

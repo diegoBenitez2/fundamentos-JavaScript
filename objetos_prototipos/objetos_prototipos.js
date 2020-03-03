@@ -45,8 +45,8 @@ Desarrolladores.prototype.saludar = function(){
 }
 //el NEW crea un nuevo objeto que  asigna un prototipo y se ejecuta
 // el constructor que retorna el objeto
-// var Diego = new Persona('diego', 'benitez',1.8)
-// var Carlos = new Persona('Carlos', 'Florez',1.7)
+var Diego = new Personas('diego', 'benitez',1.8)
+var Carlos = new Personas('Carlos', 'Florez',1.7)
 //EL PROTOTIPO es un OBJETO mas de javascript
 
 // EMACScript = es el estandar de javascript para ser un lenguaje

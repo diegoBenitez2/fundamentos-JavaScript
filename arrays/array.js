@@ -58,7 +58,7 @@ var personasALtas = personas.filter(esAlta)
 console.log(personasALtas)
 
 //filtrado de personas bajas
-const esBaja =  ({altura}) => altura <1.7
+const esBaja =  ({altura}) => altura < 1.7
 const personasBajas = personas.filter(esBaja)
 console.log(personasBajas)
 
@@ -127,5 +127,9 @@ const numOrdenadosDes = aleatorios2.sort((a,b)=> b - a)
 console.log(`los numeros ordenados Descendentemente: ${numOrdenadosDes}`)
 
 
-
+//metodo para devolver el valor y la posicion de un array
+// METODO : entries()
+// const vector=[10, 40, 60, 5];
+//   for(let [indice, valor] of vector.entries())
+//     document.write(`${valor} ocupa la posición ${indice}<br>`);
 

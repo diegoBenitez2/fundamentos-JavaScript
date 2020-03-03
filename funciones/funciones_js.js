@@ -9,7 +9,7 @@ function imprimirEdad(n ,e){
 //llamar la funcion
 imprimirEdad(nombre,edad)
 imprimirEdad('fercho', 27)
-imprimirEdad('aloso',33)
+imprimirEdad('alonso',33)
 imprimirEdad(18,'vickyalrma')
 
 //ALCANCE DE LAS FUNCIONES

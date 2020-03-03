@@ -1,7 +1,7 @@
 var x = 4, y ='4'
-//comparar con == a un mismo tipo de dato
+//comparar con ==   solo a un mismo tipo de dato
 x==y
-// comparar con tripe igual(===)
+// comparar con tripe igual(===) que valida el tipo de dato y el valor del dato
 x===y
 
 
@@ -16,11 +16,12 @@ var julio ={
 //COMPARAR OBJETOS
 //preguntar por referencia a la variabale que utilizamos
 diego == julio
-//es falso porque estan en difrentes espacio en RAM
+//es falso porque estan en diferentes espacio en RAM
 
 //aqui apunta al mismo espacio en memoria
 var otraPersona = diego
-//dará t
+otraPersona == diego
+
 
 
 

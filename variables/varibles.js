@@ -2,7 +2,7 @@
 var nombre ='diego', apellido = 'Benitez'
 var edad = 27;
 console.log('hola ' + nombre+' ' +apellido)
-console.log('Tengo'+edad+'años')
+console.log('Tengo '+edad+' años')
 
 //VARIABLES STRINGS
 

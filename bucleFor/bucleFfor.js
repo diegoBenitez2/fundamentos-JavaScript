@@ -11,7 +11,6 @@ console.log(`Al inicio del año ${juan.nombre} pesa ${juan.peso} kg`)
   const DIAS_AÑO = 365;
   const aumentarPeso = persona => persona.peso += INCREMENTO_PESO;
   const disminuirPeso =persona => persona.peso -= INCREMENTO_PESO;
-  function pesoFinal(){}
   
 for(var i = 1; i <= DIAS_AÑO; i++){
   var random = Math.random()
